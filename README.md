@@ -2,7 +2,7 @@
  
 ## Overview
 
-This project is a Kanban board application developed with ReactJS, designed for seamless project management. It integrates with the [Quicksell API](https://api.quicksell.co/v1/internal/frontend-assignment) to fetch ticket data, enabling users to interact with and organize tasks. Users can group and sort tickets by various criteria, offering flexibility and customization. See the project live at 
+This project is a Kanban board application developed with ReactJS, designed for seamless project management. It integrates with the [Quicksell API](https://api.quicksell.co/v1/internal/frontend-assignment) to fetch ticket data, enabling users to interact with and organize tasks. Users can group and sort tickets by various criteria, offering flexibility and customization. See the project live at [Live Link] (https://quickshell-frontend-eight.vercel.app)
 
 Features
 Data Management:
