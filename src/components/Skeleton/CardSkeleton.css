@@ -1,0 +1,50 @@
+.skeleton {
+    min-height: 150px;
+    width: 350px;
+    border: 2px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px; 
+    padding: 2px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent; 
+}
+  
+.skeleton-box {
+    background-color: #e0e0e0; 
+    border-radius: 4px;
+    margin: 5px 0;
+}
+  
+.skeleton-text-id {
+    height: 15px;
+    width: 80px;
+}
+  
+.skeleton-avatar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+  
+.skeleton-title {
+    height: 20px;
+    width: 80%;
+    margin: 10px 0;
+}
+  
+.skeleton-footer-tag {
+    height: 25px;
+    width: 100px;
+}
+
+
+@media (max-width: 768px) {
+    .skeleton {
+      width: 90%;
+      min-height: auto;
+      padding: 10px;
+    }
+  }

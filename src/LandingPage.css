@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  .landing-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px; 
+  }
+  
+  h1 {
+    margin-right: 20px; 
+    font-size: 3rem;
+    color: #333;
+    opacity: 0;
+    animation: textStreamer 2s forwards;
+  }
+  
+  .button {
+    background-color: #add8e6; 
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50%; 
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+  }
+  
+  .button:hover {
+    background-color: #87ceeb; 
+  }
+  
+  .arrow {
+    display: inline-block;
+    transition: transform 0.1s ease;
+  }
+  
+  .loading {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    border: 2px solid transparent;
+    border-top-color: #a05;
+    border-bottom-color: #a05;
+    border-radius: 50%;
+    animation: rotate 0.5s linear infinite; 
+  }
+  
+  .loading:after,
+  .loading:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #a05;
+  }
+  
+  .loading:after {
+    top: 1px;
+    right: -7px;
+    transform: rotate(135deg);
+  }
+  
+  .loading:before {
+    top: 11px;
+    left: -7px;
+    transform: rotate(-45deg);
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes textStreamer {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .image-container {
+    margin-left: 20px; 
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+  }
+  
+  @media (max-width: 768px) {
+    .landing-container {
+      flex-direction: column; 
+    }
+  
+    h1, .image-container {
+      margin: 10px 0; 
+    }
+  }
+  
